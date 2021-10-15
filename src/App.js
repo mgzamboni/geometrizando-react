@@ -1,25 +1,57 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Square from './Components/Square/index'
+
+import Circle from './Components/Circle'
+
+import Triangle from './Components/Triangle'
+
+import Rectangle from './Components/Rectangle'
+
+import Figure from './Components/Figure'
+
+import Art from './Components/Art'
+
+class App extends React.Component {
+
+/*
+
+  Componentes
+  Props -> Propriedades
+
+*/
+
+  render () {
+    return (
+      <div>
+        <h1 className="title">Geometrizando</h1>
+
+        <Art>
+        <Figure type="square" color="red" />
+        <Figure type="circle" color="green" />
+        <Figure type="triangle" color="blue" />
+        <Figure type="rectangle" color="black" />
+        <Figure type="square" color="red" />
+        <Figure type="circle" color="green" />
+        <Figure type="triangle" color="blue" />
+        <Figure type="rectangle" color="black" />
+        <Figure type="square" color="red" />
+        <Figure type="circle" color="green" />
+        <Figure type="triangle" color="blue" />
+        <Figure type="rectangle" color="black" />
+        <Figure type="square" color="red" />
+        <Figure type="circle" color="green" />
+        <Figure type="triangle" color="blue" />
+        <Figure type="rectangle" color="black" />
+        </Art>
+        <Figure type="square" color="red" />
+        <Figure type="circle" color="green" />
+        <Figure type="triangle" color="blue" />
+        <Figure type="rectangle" color="black" />
+
+      </div>
+    )
+  }
 }
 
 export default App;
